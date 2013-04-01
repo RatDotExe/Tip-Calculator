@@ -29,5 +29,6 @@ int main() {
 	
 	cout << "Result: " << r;
 	
+	return 0;
 	
 }
