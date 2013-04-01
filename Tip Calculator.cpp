@@ -11,11 +11,14 @@
 using namespace std;
 int main() {
 	
+	string another = "y";
 	double t;
 	double p;
 	double r;
 	double d;
 	int hund = 100;
+	
+	while (another == "y") {
 	
 	cout << "What's the total price?\n";
 	cin >> t;
@@ -27,8 +30,12 @@ int main() {
 	
 	r = t * d;
 	
-	cout << "Result: " << r;
+	cout << "Result: $" << r << "\n";
 	
-	return 0;
+	cout << "Type y to calculate another tip. Type n to end.\n";
+	cin >> another;
+	}
+	
+    return 0;
 	
 }
